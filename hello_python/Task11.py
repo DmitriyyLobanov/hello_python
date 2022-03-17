@@ -10,19 +10,22 @@ def is_int(str):
     except:
         return False
 
-N = input('Введите количество случайных элементов (N): ')
+N = input('Введите количество элементов (N): ')
 
 while is_int(N) == False or int(N) <= 0:
    N = input('Неверный ввод, введите количество случайных элементов: ')
 else:
     N = int(N)
 
-
-item = random.randint(-100, 100)
+item = 1
 sequence = [item]
 
 for i in range(1, N):
-    sequence.append(random.randint(-100, 100))
+    item *= 3
+    sequence.append(item)
+
+for i in range(0, N):
+    if i % 2 != 0: sequence[i] *= -1
 
 
 print(f'Для N = {N}: {sequence}.')
