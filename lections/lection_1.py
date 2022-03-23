@@ -67,8 +67,9 @@
 #     print(i)
 
 
-f = [1, 3, 4, 6, 4, 2]
-f.append(2)
-f.remove(3)
-del f[0]
-print(f)
+# f = [1, 3, 4, 6, 4, 2]
+# f.append(2)
+# f.remove(3)
+# del f[0]
+# print(f)
+
