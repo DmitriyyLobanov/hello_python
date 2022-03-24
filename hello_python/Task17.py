@@ -14,7 +14,7 @@ while is_int(N) == False:
 else:
     N = int(N)
 
-list = [item for item in range(-N, N + 1)]
+list = [item for item in range(-N, N, 2)]
 list_posicion =[]
 
 with open('hello_python/Task17_file.txt', 'r') as file:
