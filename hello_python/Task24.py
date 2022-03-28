@@ -2,7 +2,7 @@
 # Пример: [1.1, 1.2, 3.1, 5, 10.01] => 0.19
 
 
-numbers_list = [1.1, 1.2, 3.1, 5, 10.01]
+numbers_list = [1.65, 5, 10.59]
 
 
 def get_decimal_part(float_number, int_digits_after_point):

@@ -1,8 +1,18 @@
 # Дано число. Составить список чисел Фибоначчи, в том числе для отрицательных индексов. 
 # Т е для k = 8, список будет выглядеть так: [-21 ,13, -8, 5, −3,  2, −1,  1, 0, 1, 1, 2, 3, 5, 8, 13, 21] Негафибоначчи
 
+def get_input_int(arg_text):
+    """Получение int-ввода пользователем. arg_text - текст приглашение ко вводу."""
+    while True:
+        try:
+            input_value = input(arg_text)
+            return int(input_value)
+        except:
+            print(f'Значение ({input_value}) не является целым числом.')
 
-number = 10
+
+
+number = get_input_int("Введите k: ")
 
 def fibo_rec(number_int):
     if number_int in (1, 2):
